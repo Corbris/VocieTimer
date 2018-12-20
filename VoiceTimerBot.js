@@ -62,7 +62,8 @@ function readTime(seconds)
 	seconds  -= hrs*3600;
 	var mnts = Math.floor(seconds / 60);
 	seconds  -= mnts*60;
-	return "You have spent " + days+" days, "+hrs+" Hrs, "+mnts+" Minutes, "+seconds+" Seconds" + " seconds in voice"
+	seconds = Math.floor(seconds);
+	return "You have spent " + days+" days, "+hrs+" Hrs, "+mnts+" Minutes, "+seconds+" Seconds" + " in voice"
 }
 
 //when a voice channel is updated.

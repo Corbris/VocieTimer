@@ -1,28 +1,21 @@
 # VocieTimer
-This is a time for your voice calls in discord. using discord.js
+This is a time for your voice calls in discord. using discord.js and a local JSON file.
 
-guild ID, User ID, TimeLastMessage, TimeJoinChannel, messageCount, time.
-Time = Date.now();
 
-each message
-	if user is in json
-		if TimeLastMessage > 30 seconds
-			messageCount++
-			TimeLastMessage = current time
-	if not in json
-		push to json with current time and messages at 1
-		
+The bot will track people moving in and out of channels updating there time spent.
 
-On voice Update. && channel is not the afk channel
-	if(oldUserChannel === undefined && newUserChannel !== undefined) //someone joins
-		if user is in json
-			TimeJoinChannel = current time;
-		if not in json
-			push to json with current time
-	if(newUserChannel === undefined) //someone leaves
-		if user is in json
-			time = currentTime - TimeJoinChannel
-		if not in json
-			push to json with full default times
 
-	
+currently only working command is "-time" this gives the user their time spent in voive channels on the server.
+
+
+Future plans 
+
+is to track number of messages sent,
+
+ad a xp system for time in channels and messages. 
+
+auto assign ranks at given xp levels.
+
+
+
+
