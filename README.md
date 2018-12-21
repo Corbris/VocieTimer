@@ -1,4 +1,4 @@
-# VocieTimer
+# VoiceTimer
 This is a bot used to track time in voice channels in discord. using discord.js and a local JSON file.
 
 
