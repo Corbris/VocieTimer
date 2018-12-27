@@ -1,0 +1,107 @@
+body {
+    background-color: mediumpurple;
+}
+
+.item1 {
+    display: flex;
+    grid-area: userLogo;
+    align-items: center;
+    justify-content: center;
+}
+
+.item2 {
+    display: inline-flex;
+    grid-area: rank;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+.item2 > p1 {
+    font-size: 20px;
+    color: white;
+    padding-right: 5px;
+    padding-bottom: 9px;
+}
+
+.rankClass {
+    font-size: 60px;
+    color: white;
+    padding-right: 5px;
+}
+
+.item2 > p2 {
+    font-size: 20px;
+    color: mediumpurple;
+    padding-right: 2px;
+    padding-bottom: 9px;
+}
+
+.levelClass {
+    font-size: 60px;
+    color: mediumpurple;
+}
+
+
+.item3 {
+    grid-area: name;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+.item4 {
+    display: inline-flex;
+    grid-area: xp;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 23px;
+    padding-bottom: 18px;
+    font-size: 17px;
+    color: grey;
+}
+
+.item5 {
+    grid-area: bar;
+    padding-left: 20px;
+}
+
+
+#myProgress {
+    width: 557px;
+    background-color: grey;
+    border-radius: 30px;
+}
+
+#myBar {
+    width: 6%;
+    height: 30px;
+    background-color: mediumpurple;
+    border-radius: 30px;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-areas: 'userLogo rank rank rank' 'userLogo name name xp' 'userLogo bar bar bar';
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 80px 60px 60px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.userLogo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+

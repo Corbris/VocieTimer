@@ -6,6 +6,7 @@ const bot = new Discord.Client();
 
 bot.login(auth.token);
 
+
 //on bot start
 bot.on("ready", () => {
     console.log('Connected');
@@ -14,7 +15,7 @@ bot.on("ready", () => {
 	
 	//in case of restart. we need to push now time to the json for all users. 
 	resetTimes();
-	
+
 });
 
 //we need to push now time to the json for all users. 
@@ -50,6 +51,15 @@ bot.on("message", (message) => {
 			
 			message.channel.send(readTime(userListJson.userList[index].voiceTime/1000));
 			break;
+			
+		case 'level':
+			message.channel.send('', {
+            files: [
+                "./UserCard.png"
+            ]
+        })
+			break;
+		
 	}
 });
 
